@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,31 +6,31 @@
 
 @layer base {
   :root {
-    /* Clean, professional palette inspired by Stripe */
-    --background: 0 0% 99%;
-    --foreground: 224 71% 4%;
+    /* Clean Stripe-inspired palette */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card-foreground: 220 20% 16%;
     --card-hover: 220 14% 98%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover-foreground: 220 20% 16%;
 
-    /* Primary - Deep indigo/blue */
-    --primary: 234 89% 54%;
+    /* Primary - Stripe blue */
+    --primary: 228 76% 59%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Soft gray */
+    /* Secondary */
     --secondary: 220 14% 96%;
-    --secondary-foreground: 224 71% 4%;
+    --secondary-foreground: 220 20% 16%;
 
     /* Muted */
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
 
-    /* Accent - Teal highlight */
-    --accent: 234 70% 60%;
+    /* Accent */
+    --accent: 228 76% 59%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -38,13 +38,9 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 234 89% 54%;
+    --ring: 228 76% 59%;
 
-    --radius: 0.75rem;
-
-    /* Custom shadows */
-    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
-    --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+    --radius: 0.5rem;
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
@@ -54,47 +50,47 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 234 89% 54%;
+    --sidebar-ring: 228 76% 59%;
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --background: 224 30% 8%;
     --foreground: 210 20% 98%;
 
-    --card: 224 50% 8%;
+    --card: 224 30% 10%;
     --card-foreground: 210 20% 98%;
-    --card-hover: 224 50% 10%;
+    --card-hover: 224 30% 12%;
 
-    --popover: 224 50% 8%;
+    --popover: 224 30% 10%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 234 89% 64%;
+    --primary: 228 76% 64%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 224 50% 12%;
+    --secondary: 224 30% 14%;
     --secondary-foreground: 210 20% 98%;
 
-    --muted: 224 50% 12%;
+    --muted: 224 30% 14%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 234 70% 60%;
+    --accent: 228 76% 64%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 30%;
+    --destructive: 0 62% 45%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 224 50% 15%;
-    --input: 224 50% 15%;
-    --ring: 234 89% 64%;
+    --border: 224 30% 18%;
+    --input: 224 30% 18%;
+    --ring: 228 76% 64%;
 
-    --sidebar-background: 224 71% 4%;
+    --sidebar-background: 224 30% 8%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 234 89% 64%;
+    --sidebar-primary: 228 76% 64%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 224 50% 12%;
+    --sidebar-accent: 224 30% 14%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 224 50% 15%;
-    --sidebar-ring: 234 89% 64%;
+    --sidebar-border: 224 30% 18%;
+    --sidebar-ring: 228 76% 64%;
   }
 }
 
@@ -109,11 +105,5 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-  }
-}
-
-@layer utilities {
-  .bg-grid-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }
